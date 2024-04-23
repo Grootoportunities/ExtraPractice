@@ -1,10 +1,11 @@
 import s from './DeckItem.module.css'
+import { Deck } from '../../decks-api.ts'
 
 type DeckProps = {
-  deck: any // todo: fix
+  deck: Deck
 }
 
-const TEST_ACC_NAME = 'kukus'
+const TEST_ACC_NAME = 'Sweet'
 
 export const DeckItem = ({ deck }: DeckProps) => {
   const isTestingDeck = deck.author.name === TEST_ACC_NAME
